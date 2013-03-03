@@ -188,13 +188,17 @@ void movePlayer1() {
     delay(commonTurnDelay);
     shieldbot.stop();
     
+    delay(100);
+    
     shieldbot.forward();
     delay(100 * currentDifficulty);
     shieldbot.stop();  
+
+    delay(100);
     
-    shieldbot.drive(127,-128);
-    delay(commonTurnDelay);
-    shieldbot.stop();
+//    shieldbot.drive(127,-128);
+//    delay(commonTurnDelay);
+//    shieldbot.stop();
 }
 
 void movePlayer2() {
@@ -202,13 +206,17 @@ void movePlayer2() {
     delay(commonTurnDelay);
     shieldbot.stop();
     
+    delay(100);
+    
     shieldbot.forward();
     delay(100 * currentDifficulty);
     shieldbot.stop();
     
-    shieldbot.drive(-128,127);
-    delay(commonTurnDelay);
-    shieldbot.stop();
+    delay(100);
+    
+//    shieldbot.drive(-128,127);
+//    delay(commonTurnDelay);
+//    shieldbot.stop();
 }
 
 int checkWin() {
@@ -330,7 +338,7 @@ int checkHard() {
 
 void stepForward() {
   shieldbot.forward();
-  delay(50);
+  delay(250);
   shieldbot.stop();
   
   forwardSteps++;
@@ -338,7 +346,7 @@ void stepForward() {
 
 void stepBackwards() {
   shieldbot.backward();
-  delay(50);
+  delay(250);
   shieldbot.stop();
   
   forwardSteps--;
